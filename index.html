@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debut Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>You're invited to the 18th Birthday of</h1>
+      <h2 id="debutName"></h2>
+      <p id="heroDate"></p>
+      <button id="scrollDown">Scroll Down ↓</button>
+    </div>
+  </section>
+
+  <section id="countdown">
+    <h2>The celebration begins in:</h2>
+    <div id="countdownTimer">
+      <span id="days">00</span> days
+      <span id="hours">00</span> hrs
+      <span id="minutes">00</span> mins
+      <span id="seconds">00</span> secs
+    </div>
+  </section>
+
+  <section id="eventDetails">
+    <h2>Event Details</h2>
+    <p><strong>Date:</strong> <span id="eventDate"></span></p>
+    <p><strong>Time:</strong> <span id="eventTime"></span></p>
+    <p><strong>Venue:</strong> <span id="eventVenue"></span></p>
+    <p><strong>Attire:</strong> <span id="eventAttire"></span></p>
+    <button id="rsvpButton">RSVP</button>
+  </section>
+
+  <section id="eighteenths">
+    <h2>The 18 Treasures of My Journey</h2>
+    <div class="tabs">
+      <button class="tab active" data-tab="roses">18 Roses</button>
+      <button class="tab" data-tab="candles">18 Candles</button>
+      <button class="tab" data-tab="treasures">18 Treasures</button>
+      <button class="tab" data-tab="bears">18 Bears</button>
+      <button class="tab" data-tab="gifts">18 Gifts</button>
+      <button class="tab" data-tab="chocolates">18 Chocolates</button>
+      <button class="tab" data-tab="bills">18 Bills</button>
+      <button class="tab" data-tab="shots">18 Shots</button>
+    </div>
+    <div id="tabContent"></div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div id="galleryContainer"></div>
+  </section>
+
+  <section id="message">
+    <h2>A Message from the Debutante</h2>
+    <p id="debutMessage"></p>
+    <p id="debutSignature">— <span id="signatureName"></span></p>
+  </section>
+
+  <footer id="footer">
+    <p>Thank you for celebrating with me!</p>
+    <p id="eventHashtag"></p>
+  </footer>
+
+  <audio id="bgMusic" loop>
+    <source id="musicSource" type="audio/mpeg" />
+  </audio>
+  <button id="musicToggle">🔇</button>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

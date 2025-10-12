@@ -1,0 +1,290 @@
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e8d4f7, #d3b8f5);
+  color: #3a2b4a;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* --- HERO SECTION --- */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #c9a7e8, #e6d1f2);
+  color: white;
+  position: relative;
+  padding: 40px;
+}
+
+#hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+#hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+#scrollDown {
+  margin-top: 30px;
+  background: white;
+  color: #7a4fa3;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#scrollDown:hover {
+  background: #7a4fa3;
+  color: white;
+}
+
+/* --- COUNTDOWN --- */
+#countdown {
+  padding: 80px 20px;
+  background: white;
+  color: #4a336c;
+}
+
+#countdown h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#countdownTimer {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* --- EVENT DETAILS --- */
+#eventDetails {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 80px 20px;
+  backdrop-filter: blur(10px);
+}
+
+#eventDetails h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #5c3a8c;
+}
+
+#eventDetails p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+#rsvpButton {
+  margin-top: 20px;
+  background: #a57ae9;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+#rsvpButton:hover {
+  background: #8b5fd3;
+}
+
+/* --- GALLERY --- */
+#gallery {
+  background: linear-gradient(135deg, #f3e9fc, #e1cdf7);
+  padding: 80px 20px;
+}
+
+#gallery h2 {
+  font-family: 'Playfair Display', serif;
+  color: #4a336c;
+  margin-bottom: 20px;
+}
+
+#galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#galleryContainer img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+#galleryContainer img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- MESSAGE SECTION --- */
+#message {
+  background: white;
+  padding: 80px 20px;
+}
+
+#message h2 {
+  font-family: 'Playfair Display', serif;
+  color: #4a336c;
+  margin-bottom: 20px;
+}
+
+#debutMessage {
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+#debutSignature {
+  margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* --- FOOTER --- */
+#footer {
+  background: #c8a9e8;
+  color: white;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+/* --- MUSIC BUTTON --- */
+#musicToggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: white;
+  color: #7a4fa3;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#musicToggle:hover {
+  background: #7a4fa3;
+  color: white;
+}
+
+/* --- SCROLL ANIMATION --- */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #galleryContainer img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+
+/* --- 18THS SECTION --- */
+#eighteenths {
+  background: linear-gradient(135deg, #f3e9fc, #e1cdf7);
+  padding: 80px 20px;
+}
+
+#eighteenths h2 {
+  font-family: 'Playfair Display', serif;
+  color: #4a336c;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: white;
+  color: #7a4fa3;
+  border: 2px solid #b58ded;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.tab.active, .tab:hover {
+  background: #b58ded;
+  color: white;
+}
+
+#tabContent {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+#tabContent ul {
+  list-style: none;
+  text-align: left;
+  line-height: 1.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

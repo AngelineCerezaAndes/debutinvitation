@@ -8,6 +8,21 @@ window.debutConfig = {
   hashtag: "Angeline@18",
   music: "music.mp3",
 
+  gallery: [
+    "assets/images/hero1.jpg",
+    "assets/images/hero2.jpg",
+    "assets/images/hero3.jpg",
+    "assets/images/hero4.jpg",
+    "assets/images/hero5.jpg",
+    "assets/images/hero6.jpg",
+    "assets/images/hero7.jpg",
+    "assets/images/hero8.jpg",
+    "assets/images/hero9.jpg",
+    "assets/images/hero10.jpg",
+  ],
+
+
+
   chocolates: [
     "Kasandra Mae Andes",
     "Khloe Mae Andes",
@@ -175,157 +190,8 @@ window.debutConfig = {
     "Harry Opemia",
     "Aeron Abadesa"
   ]
+
 };
 
 
 
-// Participants
-
-
-
-// 18th chocolate 
-// Kasandra Mae Andes
-// Khloe Mae Andes
-// Michaela Venice Base
-// shannara marie llaneta 
-// Sabrina Atole
-// Quinn Scarlet Lorenzana
-// Reese Nixie Atuli
-// Sabrina Lorilla
-// Mae Berzuela 
-// Reign Golles
-// Lhian faye Andes
-// Nean Cereza
-// Chrisha fhate Andes
-// Gwynn a Lorenzana  
-// Jordyn Rianne Lorenzana
-// Alliah Mirandilla 
-// Angelica Mae golles
-// Trisha Mae Cereza
-
-
-// 18th Gifts 
-// Jenny Maravilla
-// Justine Maravilla
-// Darleen Lozada Moriones
-// Janice Ian Rose Agripa
-// Donna Jane Abril
-// Rhea Jasmine tagob Daet
-// Judy Ann Lorcha
-// Siony Cereza
-// Michelle Lota
-// Judy Ann Abocado
-// Wheng Alba
-// Janice malasa
-// Maricris Laguillen
-// Susan Orolfo 
-// Gina Botiquin
-// Fatima Cereza
-// Julie Ann Lota
-// Leny Rose Rosin
-
-
-// 18th Bills
-// Bibay Andes
-// Sharra Nobleza
-// Sherna Lorenzana
-// Shiela Mae  Atole
-// Sherryl Andes
-// Gezell Lorenzana
-// Janet Lorezana
-// Beberlyn Llaneta
-// Charlyn Jackson
-// Manilyn Abocado
-// Joezl kaye Cervantes
-// Josie Andes
-// Janice Malasa
-// Roselyn Lladones
-// Jenny Lorenzana
-// Richard Abocado
-// Michael Ibarbia
-// Rodel Lorenzana
-
-
-// 18 Shot
-// Rey Alamo
-// John Carlo Lleva
-// Kent Daniel Argote
-// Kervin Ariola
-// Harry Postrado 
-// Jonh Rovic Dioneda
-// Francis Sapıter
-// Henry Agripa
-// Kyle Matthew Acebedo
-// Jonh cedrick Abrigo
-// Carlos Richard Geal Dienzo
-// Aljohn Benetiz
-// Jonel Andes
-// Jonh Michael Manalo 
-// Alex Bonso 
-// Renz Atuli
-// Lance Aldrin Valladolid
-// Jay ar Antones
-
-
-// 18th ROSES
-// Mark Lester Andes
-// Carl Jhon Andes
-// Jerick Cereza
-// Joshua Cereza
-// Ranito Alfred Andes
-// Rhandy Jae Llaneta
-// Christopher Alegre
-// Ken solancho
-// Acxell cuna
-// Jhon Mark Maravilla
-// Jaycon Agripa
-// Rashid Binalingbing
-// Prince Darly Lorilla
-// Mark Owen Trilles
-// Jeremy Peralta
-// Jhon Benedict Andes
-// Gabriel Andes
-// Marlon Andes
-
-
-
-// 18th Treasure
-// Margareth Atole
-// Samantha Andes
-// Julia kristine Guiriba
-// Atasha Coleen Padilla
-// Aisie Ardales
-// Eloiza Callos
-// Jovy Gonzales
-// Erica Pontuya
-// Camille Lorilla
-// Riana Atuli 
-// Antonette Atuli
-// Kathlen Abrigo
-// Czarelle Buena
-// Angilyn Maravilla
-// Antonette Andes
-// Janell Andes
-// Kristine Ann
-// Kent Llaneta
-
-
-// 18th candle
-// Mae Ann Sanpablo
-// Sheena Mae Aranil
-// Jenny Lopez
-// Monica Abrigo
-// Bernadette Mendenilla
-// Angel Arispe
-// Jasmine Lorilla
-// Jasmime Jayla Desuyo
-// Ashley Orolfo
-// Angela Montenegro
-// Kristan Jela Ignacio
-// Cindy Candia
-// Alliah Grate
-// Wenna Balsarza
-// Ma. Laiysa Asejo
-// Dianne Ariate
-// Yishin Nogales
-// Ashley Jane Agripa

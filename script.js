@@ -44,11 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = src;
         img.alt = cfg.name ? `${cfg.name} - gallery` : "gallery image";
-        // lazy style: hide initially (CSS handles animation)
         galleryContainer.appendChild(img);
       });
+
+      // Add fade-in animation when scrolling into view
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      document.querySelectorAll("#galleryContainer img").forEach(el => obs.observe(el));
     }
   }
+
 
   // COUNTDOWN
   setupCountdown(cfg.date, cfg.time);
@@ -198,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (list.length === 0) {
       tabContent.innerHTML = `<p>No data yet for ${tabName}.</p>`;
     } else {
-      tabContent.innerHTML = `<ul>${list.map(name => `<li>💜 ${name}</li>`).join("")}</ul>`;
+      tabContent.innerHTML = `<ul>${list.map(name => `<li>${name}</li>`).join("")}</ul>`;
     }
   }
 

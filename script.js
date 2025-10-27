@@ -22,13 +22,33 @@ document.addEventListener("DOMContentLoaded", () => {
   setText("eventHashtag", cfg.hashtag ? `#${cfg.hashtag}` : "");
 
   // ScrollDown button behaviour
+  // ScrollDown button behaviour + autoplay music + update icon
   const scrollBtn = document.getElementById("scrollDown");
+  const audio = document.getElementById("bgMusic");
+  const musicToggle = document.getElementById("musicToggle");
+
   if (scrollBtn) {
     scrollBtn.addEventListener("click", () => {
+      // Smooth scroll
       const el = document.getElementById("countdown");
       if (el) el.scrollIntoView({ behavior: "smooth" });
+
+      // Try to play music (autoplay allowed because of user gesture)
+      if (audio) {
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              console.log("🎵 Music started automatically after scroll");
+              // Update icon to "playing"
+              if (musicToggle) musicToggle.textContent = "🔊";
+            })
+            .catch(err => console.warn("Autoplay blocked:", err));
+        }
+      }
     });
   }
+
 
   // GALLERY: render images
   const galleryContainer = document.getElementById("galleryContainer");
@@ -60,14 +80,75 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // --- LIGHTBOX FEATURE with navigation ---
+  const lightboxOverlay = document.getElementById("lightboxOverlay");
+  const lightboxImage = document.getElementById("lightboxImage");
+  const lightboxClose = document.getElementById("lightboxClose");
+  const btnPrev = document.getElementById("lightboxPrev");
+  const btnNext = document.getElementById("lightboxNext");
+
+  if (galleryContainer && lightboxOverlay && lightboxImage) {
+    const galleryImages = Array.from(galleryContainer.querySelectorAll("img"));
+    let currentIndex = 0;
+
+    // Open lightbox
+    galleryContainer.addEventListener("click", (e) => {
+      if (e.target.tagName === "IMG") {
+        currentIndex = galleryImages.indexOf(e.target);
+        showImage(currentIndex);
+        lightboxOverlay.classList.add("active");
+      }
+    });
+
+    // Close lightbox
+    lightboxClose.addEventListener("click", () => {
+      lightboxOverlay.classList.remove("active");
+    });
+
+    // Navigate
+    btnNext.addEventListener("click", () => changeImage(1));
+    btnPrev.addEventListener("click", () => changeImage(-1));
+
+    // Close when clicking outside image
+    lightboxOverlay.addEventListener("click", (e) => {
+      if (e.target === lightboxOverlay) {
+        lightboxOverlay.classList.remove("active");
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      if (!lightboxOverlay.classList.contains("active")) return;
+      if (e.key === "ArrowRight") changeImage(1);
+      if (e.key === "ArrowLeft") changeImage(-1);
+      if (e.key === "Escape") lightboxOverlay.classList.remove("active");
+    });
+
+    function showImage(index) {
+      if (index < 0) index = galleryImages.length - 1;
+      if (index >= galleryImages.length) index = 0;
+      currentIndex = index;
+      lightboxImage.style.opacity = 0;
+      setTimeout(() => {
+        lightboxImage.src = galleryImages[currentIndex].src;
+        lightboxImage.style.opacity = 1;
+      }, 200);
+    }
+
+    function changeImage(direction) {
+      showImage(currentIndex + direction);
+    }
+  }
+
+
 
   // COUNTDOWN
   setupCountdown(cfg.date, cfg.time);
 
   // MUSIC: configure audio + toggle
-  const audio = document.getElementById("bgMusic");
+  // const audio = document.getElementById("bgMusic");
   const musicSrc = document.getElementById("musicSource");
-  const musicToggle = document.getElementById("musicToggle");
+  // const musicToggle = document.getElementById("musicToggle");
 
   if (musicSrc && cfg.music) {
     musicSrc.src = cfg.music;

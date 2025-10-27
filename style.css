@@ -296,3 +296,96 @@ section.visible {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* --- LIGHTBOX --- */
+#lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 10, 40, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#lightboxOverlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#lightboxContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightboxContent img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s ease;
+}
+
+#lightboxClose {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 2.2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+#lightboxClose:hover {
+  color: #d3b8f5;
+}
+
+/* Navigation buttons (Next / Prev) */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.3s ease;
+}
+
+.navBtn:hover {
+  background: rgba(211, 184, 245, 0.6);
+}
+
+#lightboxPrev { left: -60px; }
+#lightboxNext { right: -60px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  #lightboxPrev, #lightboxNext {
+    font-size: 2rem;
+    left: -40px;
+    right: -40px;
+  }
+}

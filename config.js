@@ -6,7 +6,7 @@ window.debutConfig = {
   attire: "Semi-Formal / Formal Attire",
   message: "I am beyond grateful to everyone who made my journey so special. This night is for all of you.",
   hashtag: "Angeline@18",
-  music: "music.mp3",
+  music: "assets/music/tenderness.mp3",
 
   gallery: [
     "assets/images/hero1.jpg",

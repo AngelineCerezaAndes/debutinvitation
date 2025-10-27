@@ -440,19 +440,24 @@ section.visible {
 #creatorFooter {
   background: #f6f0fc;
   color: #4a336c;
-  padding: 10px;
-  font-size: 0.8rem;
+  padding: 6px;
+  font-size: 0.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
-  line-height: 1.4;
+  gap: 4px;
+  line-height: 1.2;
   opacity: 0; /* initial hidden for fade-in */
   transform: translateY(30px);
   transition: opacity 1s ease, transform 1s ease;
 }
+
+#creatorFooter strong {
+  font-weight: 400; /* dati siguro 700 or 600 */
+}
+
 
 #creatorFooter svg {
   vertical-align: middle; /* para pantay sa text */
@@ -484,5 +489,6 @@ section.visible {
   transform: scale(1.15);
   fill: #b697f5;
 }
+
 
 

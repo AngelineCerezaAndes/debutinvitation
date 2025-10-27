@@ -435,3 +435,15 @@ section.visible {
     right: -40px;
   }
 }
+
+
+#creatorFooter {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6a5a85; /* subtle lavender-gray */
+  padding: 15px 0;
+  opacity: 0.7;
+}
+#creatorFooter small {
+  font-family: 'Poppins', sans-serif;
+}

@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setText("signatureName", cfg.name || "");
   setText("eventHashtag", cfg.hashtag ? `#${cfg.hashtag}` : "");
 
-  // ScrollDown button behaviour
   // ScrollDown button behaviour + autoplay music + update icon
   const scrollBtn = document.getElementById("scrollDown");
   const audio = document.getElementById("bgMusic");
@@ -287,11 +286,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTab(tabName) {
     const list = all18ths[tabName] || [];
     if (!tabContent) return;
-    if (list.length === 0) {
-      tabContent.innerHTML = `<p>No data yet for ${tabName}.</p>`;
-    } else {
-      tabContent.innerHTML = `<ul>${list.map(name => `<li>${name}</li>`).join("")}</ul>`;
-    }
+
+    tabContent.classList.remove("show"); // remove para reset transition
+
+    setTimeout(() => {
+      if (list.length === 0) {
+        tabContent.innerHTML = `<p>No data yet for ${tabName}.</p>`;
+      } else {
+        tabContent.innerHTML = `<ul>${list.map(name => `<li>${name}</li>`).join("")}</ul>`;
+      }
+      tabContent.classList.add("show"); // trigger fade-in
+    }, 100);
   }
 
   tabs.forEach(btn => {
@@ -304,6 +309,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderTab("roses"); // default tab
 
+  // RSVP button open Google Form link
+  const rsvpBtn = document.getElementById("rsvpButton");
+  if (rsvpBtn && cfg.rsvpLink) {
+    rsvpBtn.addEventListener("click", () => {
+      window.open(cfg.rsvpLink, "_blank");
+    });
+  }
 
 
 

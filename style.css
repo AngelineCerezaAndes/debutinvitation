@@ -297,6 +297,52 @@ section.visible {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* --- 18ths LIST STYLE --- */
+#tabContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+#tabContent ul li {
+  position: relative;
+  font-size: 1.1rem;
+  color: #3a2b4a;
+  padding-left: 25px;
+  line-height: 1.8;
+  transition: transform 0.2s ease;
+}
+
+#tabContent ul li::before {
+  content: "✦";
+  color: #b192e3; /* modern lavender sparkle */
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  top: 0;
+}
+
+#tabContent ul li:hover {
+  transform: translateX(5px);
+}
+
+/* --- FADE-IN EFFECT FOR TAB CONTENT --- */
+#tabContent {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#tabContent.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
 
 /* --- LIGHTBOX --- */
 #lightboxOverlay {

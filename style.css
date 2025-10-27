@@ -436,14 +436,53 @@ section.visible {
   }
 }
 
+/* Creator Signature*/
+#creatorFooter {
+  background: #f6f0fc;
+  color: #4a336c;
+  padding: 15px 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+#creatorFooter:hover {
+  opacity: 1;
+}
+
+#creatorFooter a {
+  color: #8b6fcf;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#creatorFooter a:hover {
+  color: #b697f5;
+}
+
+#fbIcon svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+#fbIcon:hover svg {
+  transform: scale(1.15);
+  fill: #b697f5;
+}
 
 #creatorFooter {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #6a5a85; /* subtle lavender-gray */
-  padding: 15px 0;
-  opacity: 0.7;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
 }
-#creatorFooter small {
-  font-family: 'Poppins', sans-serif;
+
+#creatorFooter.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
+

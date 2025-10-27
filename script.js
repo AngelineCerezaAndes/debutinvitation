@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, obsOptions);
 
-  document.querySelectorAll("section, #galleryContainer img").forEach(el => obs.observe(el));
+  document.querySelectorAll("section, #galleryContainer img, #creatorFooter").forEach(el => obs.observe(el));
 
   /* --- Helper functions --- */
   function formatReadableDate(dateISO, timeStr) {

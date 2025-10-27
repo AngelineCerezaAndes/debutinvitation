@@ -1,19 +1,331 @@
 window.debutConfig = {
   name: "Angeline Cereza Andes",
   date: "2025-11-26",
-  time: "18:00",
-  venue: "Capantaran Imalnod Legazpi City",
-  attire: "Formal Attire",
+  time: "16:00",
+  venue: "Capantaran, Imalnod Legazpi City",
+  attire: "Semi-Formal / Formal Attire",
   message: "I am beyond grateful to everyone who made my journey so special. This night is for all of you.",
-  hashtag: "AnglineAt18",
+  hashtag: "Angeline@18",
   music: "music.mp3",
 
-  roses: ["John Cruz", "Mark Dela Peña", "Carlo Reyes", "Vincent Lim", "Joshua Santos", "Miguel Ramos", "Bryan Dizon", "Patrick Lao", "Renzo Gomez", "Nathaniel Uy", "Lester Ong", "James Rivera", "Andre Torres", "Marco Evangelista", "Adrian Cruz", "Leo Tan", "Ryan Bautista", "Tristan Ramos"],
-  candles: ["Alyssa Reyes", "Bea Mendoza", "Camille Chua", "Danica Santos", "Erika Lim", "Faye Dela Rosa", "Giselle Tan", "Hannah Cruz", "Ivy Torres", "Jamie Bautista", "Katrina Ong", "Lianne Gomez", "Mae Rivera", "Nina Ramos", "Olivia Lao", "Patricia Dizon", "Queenie Uy"],
-  treasures: ["Tita Grace", "Tito Rommel", "Ate Joy", "Kuya Ian", "Lolo Ben", "Lola Tess", "Ninang Liza", "Ninong Mark", "Ella Santos", "Mia Lim", "Karen Ramos", "Tin Torres", "Pam Dela Cruz", "Steph Bautista", "Chloe Uy", "Bianca Ong", "Angel Gomez"],
-  bears: ["Anna", "Bella", "Cara", "Dana", "Ella", "Fiona", "Gina", "Hanna", "Isla", "Jessa", "Kyla", "Lara", "Mina", "Nora", "Olla", "Pia", "Quinn", "Ria"],
-  gifts: ["Liza", "Maria", "Nina", "Opal", "Pau", "Queenie", "Rose", "Sara", "Tina", "Una", "Vera", "Wina", "Xyla", "Yna", "Zara", "Faith", "Hope", "Love"],
-  chocolates: ["Karl", "Liam", "Matt", "Nico", "Owen", "Paul", "Quin", "Ralph", "Sam", "Troy", "Uly", "Vince", "Wade", "Xian", "Yuri", "Zack", "Ian", "Joel"],
-  bills: ["Tita Mila", "Tito Bob", "Ate Jean", "Kuya Rico", "Ninang Tess", "Ninong Leo", "Tita Nene", "Tito Romy", "Lola Baby", "Lolo Peping", "Ella Mae", "Riza", "Katrina", "Lou", "Mara", "Jess", "Noel", "Gina"],
-  shots: ["James", "Kyle", "Leo", "Mark", "Nathan", "Oscar", "Pete", "Quin", "Ryan", "Steve", "Tom", "Umar", "Vic", "Will", "Xave", "Yash", "Zed", "Aaron"]
+  chocolates: [
+    "Kasandra Mae Andes",
+    "Khloe Mae Andes",
+    "Michaela Venice Base",
+    "Shannara Marie Llaneta",
+    "Sabrina Atole",
+    "Quinn Scarlet Lorenzana",
+    "Reese Nixie Atuli",
+    "Sabrina Lorilla",
+    "Mae Berzuela",
+    "Reign Golles",
+    "Lhian Faye Andes",
+    "Nean Cereza",
+    "Chrisha Fhate Andes",
+    "Gwynn A Lorenzana",
+    "Jordyn Rianne Lorenzana",
+    "Alliah Mirandilla",
+    "Angelica Mae Golles",
+    "Trisha Mae Cereza"
+  ],
+
+  gifts: [
+    "Jenny Maravilla",
+    "Justine Maravilla",
+    "Darleen Lozada Moriones",
+    "Janice Ian Rose Agripa",
+    "Donna Jane Abril",
+    "Rhea Jasmine Tagob Daet",
+    "Judy Ann Lorcha",
+    "Siony Cereza",
+    "Michelle Lota",
+    "Judy Ann Abocado",
+    "Wheng Alba",
+    "Janice Malasa",
+    "Maricris Laguillen",
+    "Susan Orolfo",
+    "Gina Botiquin",
+    "Fatima Cereza",
+    "Julie Ann Lota",
+    "Leny Rose Rosin"
+  ],
+
+  bills: [
+    "Bibay Andes",
+    "Sharra Nobleza",
+    "Sherna Lorenzana",
+    "Shiela Mae Atole",
+    "Sherryl Andes",
+    "Gezell Lorenzana",
+    "Janet Lorezana",
+    "Beberlyn Llaneta",
+    "Charlyn Jackson",
+    "Manilyn Abocado",
+    "Joezl Kaye Cervantes",
+    "Josie Andes",
+    "Janice Malasa",
+    "Roselyn Lladones",
+    "Jenny Lorenzana",
+    "Richard Abocado",
+    "Michael Ibarbia",
+    "Rodel Lorenzana"
+  ],
+
+  shots: [
+    "Rey Alamo",
+    "John Carlo Lleva",
+    "Kent Daniel Argote",
+    "Kervin Ariola",
+    "Harry Postrado",
+    "Jonh Rovic Dioneda",
+    "Francis Sapıter",
+    "Henry Agripa",
+    "Kyle Matthew Acebedo",
+    "Jonh Cedrick Abrigo",
+    "Carlos Richard Geal Dienzo",
+    "Aljohn Benetiz",
+    "Jonel Andes",
+    "Jonh Michael Manalo",
+    "Alex Bonso",
+    "Renz Atuli",
+    "Lance Aldrin Valladolid",
+    "Jay Ar Antones"
+  ],
+
+  roses: [
+    "Mark Lester Andes",
+    "Carl Jhon Andes",
+    "Jerick Cereza",
+    "Joshua Cereza",
+    "Ranito Alfred Andes",
+    "Rhandy Jae Llaneta",
+    "Christopher Alegre",
+    "Ken Solancho",
+    "Acxell Cuna",
+    "Jhon Mark Maravilla",
+    "Jaycon Agripa",
+    "Rashid Binalingbing",
+    "Prince Darly Lorilla",
+    "Mark Owen Trilles",
+    "Jeremy Peralta",
+    "Jhon Benedict Andes",
+    "Gabriel Andes",
+    "Marlon Andes"
+  ],
+
+  treasures: [
+    "Margareth Atole",
+    "Samantha Andes",
+    "Julia Kristine Guiriba",
+    "Atasha Coleen Padilla",
+    "Aisie Ardales",
+    "Eloiza Callos",
+    "Jovy Gonzales",
+    "Erica Pontuya",
+    "Camille Lorilla",
+    "Riana Atuli",
+    "Antonette Atuli",
+    "Kathlen Abrigo",
+    "Czarelle Buena",
+    "Angilyn Maravilla",
+    "Antonette Andes",
+    "Janell Andes",
+    "Kristine Ann",
+    "Kent Llaneta"
+  ],
+
+  candles: [
+    "Mae Ann Sanpablo",
+    "Sheena Mae Aranil",
+    "Jenny Lopez",
+    "Monica Abrigo",
+    "Bernadette Mendenilla",
+    "Angel Arispe",
+    "Jasmine Lorilla",
+    "Jasmime Jayla Desuyo",
+    "Ashley Orolfo",
+    "Angela Montenegro",
+    "Kristan Jela Ignacio",
+    "Cindy Candia",
+    "Alliah Grate",
+    "Wenna Balsarza",
+    "Ma. Laiysa Asejo",
+    "Dianne Ariate",
+    "Yishin Nogales",
+    "Ashley Jane Agripa"
+  ],
+
+  bears: [
+    "Akkio Fort Nobleza",
+    "Hao Loveriza",
+    "John Austin Mayores",
+    "Daellan John Gentilizo",
+    "Jonh Christoper Andes",
+    "Alexis Austin Ibarbia",
+    "Kenzo Asaytuno",
+    "Nikko Arizapa",
+    "Laurence Lota",
+    "Matthew Lorcha",
+    "Maxwill Kurt Molano",
+    "Nash Manaog",
+    "Luke Golles",
+    "Nikko Daen",
+    "Mac Daniel Ibarbia",
+    "Jayke Cereza",
+    "Harry Opemia",
+    "Aeron Abadesa"
+  ]
 };
+
+
+
+// Participants
+
+
+
+// 18th chocolate 
+// Kasandra Mae Andes
+// Khloe Mae Andes
+// Michaela Venice Base
+// shannara marie llaneta 
+// Sabrina Atole
+// Quinn Scarlet Lorenzana
+// Reese Nixie Atuli
+// Sabrina Lorilla
+// Mae Berzuela 
+// Reign Golles
+// Lhian faye Andes
+// Nean Cereza
+// Chrisha fhate Andes
+// Gwynn a Lorenzana  
+// Jordyn Rianne Lorenzana
+// Alliah Mirandilla 
+// Angelica Mae golles
+// Trisha Mae Cereza
+
+
+// 18th Gifts 
+// Jenny Maravilla
+// Justine Maravilla
+// Darleen Lozada Moriones
+// Janice Ian Rose Agripa
+// Donna Jane Abril
+// Rhea Jasmine tagob Daet
+// Judy Ann Lorcha
+// Siony Cereza
+// Michelle Lota
+// Judy Ann Abocado
+// Wheng Alba
+// Janice malasa
+// Maricris Laguillen
+// Susan Orolfo 
+// Gina Botiquin
+// Fatima Cereza
+// Julie Ann Lota
+// Leny Rose Rosin
+
+
+// 18th Bills
+// Bibay Andes
+// Sharra Nobleza
+// Sherna Lorenzana
+// Shiela Mae  Atole
+// Sherryl Andes
+// Gezell Lorenzana
+// Janet Lorezana
+// Beberlyn Llaneta
+// Charlyn Jackson
+// Manilyn Abocado
+// Joezl kaye Cervantes
+// Josie Andes
+// Janice Malasa
+// Roselyn Lladones
+// Jenny Lorenzana
+// Richard Abocado
+// Michael Ibarbia
+// Rodel Lorenzana
+
+
+// 18 Shot
+// Rey Alamo
+// John Carlo Lleva
+// Kent Daniel Argote
+// Kervin Ariola
+// Harry Postrado 
+// Jonh Rovic Dioneda
+// Francis Sapıter
+// Henry Agripa
+// Kyle Matthew Acebedo
+// Jonh cedrick Abrigo
+// Carlos Richard Geal Dienzo
+// Aljohn Benetiz
+// Jonel Andes
+// Jonh Michael Manalo 
+// Alex Bonso 
+// Renz Atuli
+// Lance Aldrin Valladolid
+// Jay ar Antones
+
+
+// 18th ROSES
+// Mark Lester Andes
+// Carl Jhon Andes
+// Jerick Cereza
+// Joshua Cereza
+// Ranito Alfred Andes
+// Rhandy Jae Llaneta
+// Christopher Alegre
+// Ken solancho
+// Acxell cuna
+// Jhon Mark Maravilla
+// Jaycon Agripa
+// Rashid Binalingbing
+// Prince Darly Lorilla
+// Mark Owen Trilles
+// Jeremy Peralta
+// Jhon Benedict Andes
+// Gabriel Andes
+// Marlon Andes
+
+
+
+// 18th Treasure
+// Margareth Atole
+// Samantha Andes
+// Julia kristine Guiriba
+// Atasha Coleen Padilla
+// Aisie Ardales
+// Eloiza Callos
+// Jovy Gonzales
+// Erica Pontuya
+// Camille Lorilla
+// Riana Atuli 
+// Antonette Atuli
+// Kathlen Abrigo
+// Czarelle Buena
+// Angilyn Maravilla
+// Antonette Andes
+// Janell Andes
+// Kristine Ann
+// Kent Llaneta
+
+
+// 18th candle
+// Mae Ann Sanpablo
+// Sheena Mae Aranil
+// Jenny Lopez
+// Monica Abrigo
+// Bernadette Mendenilla
+// Angel Arispe
+// Jasmine Lorilla
+// Jasmime Jayla Desuyo
+// Ashley Orolfo
+// Angela Montenegro
+// Kristan Jela Ignacio
+// Cindy Candia
+// Alliah Grate
+// Wenna Balsarza
+// Ma. Laiysa Asejo
+// Dianne Ariate
+// Yishin Nogales
+// Ashley Jane Agripa
